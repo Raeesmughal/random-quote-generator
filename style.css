@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;}
+h1{
+    text-align: center;
+    margin: 30px 20px;
+}
+.profileLink{
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+p>a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    margin: 50px auto;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+p{
+    margin: 20px 0;
+    font-size: 2em;
+}
+p.quote{
+
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+P.author{
+
+    color: grey;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    height: 50px;
+    width: 150px;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+button:active{
+    scale: .99 .99;
+    background-color: lightgray;
+
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    p.quote{
+        font-size: 4vw;
+    }
+    p.author{
+        font-size: 4vw;
+    }
+    .buttons{
+        justify-content: space-around;
+    }
+    button{
+        height:35px;
+    width: 100px;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    }
+}
+
+@media screen and (max-width:350px){
+    button{
+        height: 30px;
+        width: 80px;
+        padding: 3px;
+        font-size: .8em;
+    }
+}
