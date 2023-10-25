@@ -31,7 +31,7 @@ let generatingQuote = async () => {
     console.log(error.name + ' : ' + error.message);
     quote.innerHTML = 'Error';
     quote.style.color = 'red';
-    quote.innerHTML = '';
+    author.innerHTML = '';
  }
 
 }
