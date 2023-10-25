@@ -24,11 +24,14 @@ let generatingQuote = async () => {
     let result =await response.json();
 
     quote.innerHTML = result.content;
+    quote.style.color = 'white';
     author.innerHTML = result.author;
-    copyText.innerHTML = 'Copy'
-    console.log(result)
+    copyText.innerHTML = 'Copy';
  }catch(error){
-    console.log(error)
+    console.log(error.name + ' : ' + error.message);
+    quote.innerHTML = 'Error';
+    quote.style.color = 'red';
+    quote.innerHTML = '';
  }
 
 }
