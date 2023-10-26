@@ -21,6 +21,7 @@ let generatingQuote = async () => {
     let url = 'https://api.quotable.io/random';
 
     let response = await fetch(url);
+    console.log(response);
     let result =await response.json();
 
     quote.innerHTML = result.content;
